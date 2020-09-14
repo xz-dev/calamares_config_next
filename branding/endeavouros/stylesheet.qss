@@ -104,8 +104,8 @@ QListView::item:alternate {
 
 QListView::item:!alternate:selected:active {
 	background: qlineargradient(x1: 0, y1: 1, x2: 1, y2: 1,
-        stop: 0 #06004C, stop: 0.739 #06004C,
-        stop: 0.74 white, stop: 1.0 white);
+        stop: 0 #06004C, stop: 0.599 #06004C,
+        stop: 0.60 white, stop: 1.0 white);
 }
 
 QListView::item:selected:active {
