@@ -75,8 +75,8 @@ sidebar: widget
 strings:
     productName:         EndeavourOS
     shortProductName:    EndeavourOS
-    version:             1.0
-    shortVersion:        1.0
+    version:             2020.09.19
+    shortVersion:        2020.09.19
     versionedName:       EndeavourOS
     shortVersionedName:  EndeavourOS
     bootloaderEntryName: EndeavourOS
