@@ -31,12 +31,12 @@ https://github.com/FLVAL/calamares_branding
 https://github.com/endeavouros-team/calamares_branding
 
 BLUE THEME OFFLINE
-color01: #1B0B3C*06004C	blue night
-color02: #383370*45385F	     |
-color03: #6F6583*6A6694	     |
-color04: #978FA7*9B99B7	     |
-color05: #C1BCCB*CDCCDB	     |
-color06: #D3D1D9*E3E3EA	clearest
+color01: #1B0B3C	purple night
+color02: #383370	     |
+color03: #6F6583	     |
+color04: #978FA7	     |
+color05: #C1BCCB	     |
+color06: #D3D1D9	clearest
 color07: #52134C	tooltip purple
 color08: #DCD0DB	tooltip text
 color09: #000000	black error
