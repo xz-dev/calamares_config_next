@@ -230,6 +230,7 @@ QComboBox {
 	background: #C1BCCB;
     	selection-background-color: #1B0B3C;
 	font: 16px;
+	min-width: 300px;
 }
 
 QComboBox::down-arrow {
@@ -553,7 +554,6 @@ QScrollBar::down-arrow:vertical {
 #partitionBarView { }
 
 */
-
 
 /* Licensing module.
 
