@@ -31,15 +31,15 @@ https://github.com/FLVAL/calamares_branding
 https://github.com/endeavouros-team/calamares_branding
 
 BLUE THEME OFFLINE
-color01: #06004C	blue night
-color02: #383370	     |
-color03: #6A6694	     |
-color04: #9B99B7	     |
-color05: #CDCCDB	     |
-color06: #E3E3EA	clearest
+color01: #1B0B3C*06004C	blue night
+color02: #383370*45385F	     |
+color03: #6F6583*6A6694	     |
+color04: #978FA7*9B99B7	     |
+color05: #C1BCCB*CDCCDB	     |
+color06: #D3D1D9*E3E3EA	clearest
 color07: #52134C	tooltip purple
 color08: #DCD0DB	tooltip text
-color09: #7F1D00	error red
+color09: #000000	black error
 color10: #3F5924	valid green
 
 ENDEAVOUROS LOGO
@@ -51,34 +51,37 @@ color13: #FF7F7F     	orange
 
 /* ########## MAIN APPLICATION WINDOW ########## */
 
+#mainApp {
+}
+
 #sidebarApp {
-	background-color: #06004C;
+	background-color: #1B0B3C;
 }
 
 #logoApp {
-	background-color: #06004C;
+	background-color: #1B0B3C;
 }
 
 #sidebarMenuApp {
-	background-color: #06004C;
+	background-color: #1B0B3C;
 	background-image: url(/usr/share/calamares/branding/endeavouros/img/bg_sidebar_left.png);
 	font: 20px;
 	padding-top: 30px;
 }
 
 QWidget {
-	background-color: #CDCCDB;
+	background-color: #C1BCCB;
 	font: 16px;
-	color: #06004C;
+	color: #1B0B3C;
 }
 
 QListWidget::item:alternate {
-	background: #CDCCDB;
-	color: #06004C;
+	background: #C1BCCB;
+	color: #1B0B3C;
 }
 
 QTextEdit, QListView {
-    	background-color: #E3E3EA;
+    	background-color: #D3D1D9;
 }
 
 QDialogButtonBox { 
@@ -86,137 +89,176 @@ QDialogButtonBox {
 }
 
 QAbstractSpinBox {
-	background: #E3E3EA;
+	background: #D3D1D9;
 }
 
 /* ########## KEYBOARD PAGE  ########## */
 
 #deviceInfoIcon {
-	color: #06004C;
+	color: #1B0B3C;
 }
 
 /* ########## LIST VIEW ########## */
 
 QListView::item:alternate {
-	background: #E3E3EA;
-	color: #06004C;
+	background: #D3D1D9;
+	color: #1B0B3C;
 }
 
 QListView::item:!alternate:selected:active {
 	background: qlineargradient(x1: 0, y1: 1, x2: 1, y2: 1,
-        stop: 0 #06004C, stop: 0.599 #06004C,
-        stop: 0.60 white, stop: 1.0 white);
+        stop: 0 #1B0B3C, stop: 0.499 #1B0B3C,
+        stop: 0.50 white, stop: 1.0 white);
 }
 
 QListView::item:selected:active {
-	background: #06004C;
+	background: #1B0B3C;
 	color: white;
 }
 
 QListView::item:selected:!active {
-	background: #06004C;
+	background: #1B0B3C;
 	color: white;
 }
 
 QListView::item:hover {
-	background: #06004C;
+	background: #1B0B3C;
 	color: white;
 }
 
 QListView#listLayout::item:!alternate:selected:active {
-	background: #06004C;
+	background: #1B0B3C;
 }
 
 QListView#listVariant::item:!alternate:selected:active {
-	background: #06004C;
+	background: #1B0B3C;
 }
 
 /* ########## LINE EDIT ########## */
 
-QLineEdit#textBoxFullName, QLineEdit#textBoxUsername, QLineEdit#textBoxHostname,
-QLineEdit#textBoxUserPassword, QLineEdit#textBoxUserVerifiedPassword,
-QLineEdit#textBoxRootPassword, QLineEdit#textBoxVerifiedRootPassword,
-QLineEdit#LE_TestKeyboard, QLineEdit#m_passphraseLineEdit,
-QLineEdit#m_confirmLineEdit, QLineEdit#vgName { 
-	background: #E3E3EA;
+QLineEdit#LE_TestKeyboard {
+	background: #D3D1D9;
+	height: 25px;
+	border-radius: 5px;	
 }
 
-#textBoxFullName, #textBoxUsername, #textBoxHostname, #textBoxUserPassword, 
-#textBoxUserVerifiedPassword, #textBoxRootPassword, #textBoxVerifiedRootPassword, 
-#textBoxAutoLogin, #LE_TestKeyboard, #m_passphraseLineEdit, #m_confirmLineEdit,
-#vgName {
+QLineEdit#m_passphraseLineEdit, QLineEdit#vgName,
+QLineEdit#m_confirmLineEdit { 
+	background: #D3D1D9;
+	border-radius: 5px;
+}
+
+QLineEdit#textBoxUserVerifiedPassword, QLineEdit#textBoxVerifiedRootPassword { 
+	background: #D3D1D9;
+	width: 220px;
+	height: 25px;
+	border-radius: 5px;
+}
+
+QLineEdit#textBoxFullName, QLineEdit#textBoxLoginName, QLineEdit#textBoxHostName,
+QLineEdit#textBoxUserPassword, QLineEdit#textBoxRootPassword { 
+	background: #D3D1D9;
+	width: 220px;
+	height: 25px;
+	border-radius: 5px;
+	margin-left: 120px;
+}
+
+#textBoxFullName, #textBoxLoginName, #textBoxHostName, #textBoxUserPassword,
+#textBoxRootPassword, #textBoxAutoLogin, #vgName {
 	font: 16px;
-        color: #06004C;
-	border: 1px solid #06004C;
+	border: 1px solid #2F343F;
+	margin-left: 120px;
+}
+
+#textBoxUserVerifiedPassword, #textBoxVerifiedRootPassword, 
+#LE_TestKeyboard, #m_confirmLineEdit, #m_passphraseLineEdit {
+	font: 16px;
+	border: 1px solid #2F343F;
 }
 
 /* ########## LABEL ########## */
 
 #mainText {
-	color: #06004C;
+	color: #1B0B3C;
 }
 
 #partitionLabel {
-	background: #E3E3EA;
+	background: #D3D1D9;
 }
 
 #partitionLabelsView {
-	background: #E3E3EA;
+	background: #D3D1D9;
 }
 
 #CreatePartitionDialog {
-	background: #CDCCDB;	
+	background: #C1BCCB;	
 }
 
 #partResizerWidget {
-	border: 1px solid #06004C;
+	border: 1px solid #1B0B3C;
 }
 
 #m_previewBeforeFrame, #m_previewAfterFrame {
-	background: #E3E3EA;
+	background: #D3D1D9;
+}
+
+#labelWhatIsYourName {
+	margin-top: 90px;
+	margin-left: 120px;
+}
+
+#username_label_2, #hostname_label_2, #password_label_2,
+#checkBoxValidatePassword, #checkBoxAutoLogin, #labelChooseRootPassword {
+	margin-top: 10px;
+	margin-left: 120px;
+}
+
+#checkBoxReusePassword, #checkBoxDoAutoLogin {
+	margin-left: 120px;
 }
 
 #labelFullNameError, #labelUsernameError,
 #labelHostnameError, #labelUserPasswordError,
 #labelRootPasswordError {
-	color: #7F1D00;
+	color: #000000;
 }
 
 /* ########## COMBO BOX ########## */
 
 QComboBox {
-	background: #CDCCDB;
-    	selection-background-color: #06004C;
+	background: #C1BCCB;
+    	selection-background-color: #1B0B3C;
 	font: 16px;
 }
 
 QComboBox::down-arrow {
-	background: #E3E3EA;
+	background: #D3D1D9;
 	image: url(/usr/share/calamares/branding/endeavouros/img/launchpad_16x16.png);
 	width: 14px;
 	height: 14px;
 }
 
 QComboBox::item:selected {
-	background: #06004C;
+	background: #1B0B3C;
     	color: #FFFFFF;
 	padding: 5px;
 }
 
 #mountPointComboBox:editable {
-	background: #E3E3EA;
+	background: #D3D1D9;
 }
 
 #mountPointComboBox {
-    	selection-background-color: #06004C;
+    	selection-background-color: #1B0B3C;
 }
 
 #mountPointComboBox::drop-down {
-	background: #E3E3EA;
+	background: #D3D1D9;
 	padding-left: 2px;
 	border: 1px;
-	border-left-color: #E3E3EA;
-	border-top-color: #E3E3EA;
+	border-left-color: #D3D1D9;
+	border-top-color: #D3D1D9;
 	border-right-color: #3B3B3B;
 	border-bottom-color: #3B3B3B;
 	border-style: solid;
@@ -227,7 +269,7 @@ QComboBox::item:selected {
 QSpinBox {
 	border-width: 1px;
 	border-style: solid;
-	border-color: #06004C;
+	border-color: #1B0B3C;
 	height: 24px;
 }
 
@@ -242,19 +284,19 @@ QSpinBox::down-button {
 /* ########## TREE VIEW ########## */
 
 QTreeView {
-	background: #E3E3EA;
+	background: #D3D1D9;
 	font: 14px;
 	show-decoration-selected: 0;
 }
 
 QTreeView::item {
-	border: 1px dotted #06004C;
+	border: 1px dotted #1B0B3C;
 	border-top-color: transparent;
 	border-bottom-color: transparent;
 }
 
 QTreeView::item:selected {
-	background: #06004C;
+	background: #1B0B3C;
 }
 
 QTreeView::branch:has-siblings:!adjoins-item {
@@ -284,7 +326,7 @@ QTreeView::branch:open:has-children:has-siblings  {
 /* ########## HEADER VIEW ########## */
 
 QHeaderView::section {
-	background-color: #383370;
+	background-color: #45385F;
 	color: white;
 	border: 1px dotted white;
 	padding-left: 4px;
@@ -303,8 +345,8 @@ QToolTip {
 /* ########## BUTTONS GENERAL A/GENERAL B/SUBCATEGORY ########## */
 
 QPushButton {
-	background-color: #E3E3EA;
-    	border: 1px solid #06004C;
+	background-color: #D3D1D9;
+    	border: 1px solid #1B0B3C;
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
     	min-width: 4em;
@@ -313,34 +355,34 @@ QPushButton {
 
 QPushButton:pressed {
     	background-color: #7F3FBF;
-    	color: #CDCCDB;
+    	color: #C1BCCB;
 }
 
 QPushButton:hover {
-	background-color: #06004C;
-	color: #CDCCDB;
+	background-color: #1B0B3C;
+	color: #C1BCCB;
 }
 
 QPushButton#view-button-modify, QPushButton#createButton, 
 QPushButton#deleteButton, QPushButton#editButton {
-	background-color: #CDCCDB;
+	background-color: #C1BCCB;
 }
 
 QPushButton#view-button-modify:pressed, QPushButton#createButton:pressed, 
 QPushButton#deleteButton:pressed, QPushButton#editButton:pressed {
 	background-color: #7F3FBF;
-    	color: #CDCCDB;
+    	color: #C1BCCB;
 }
 
 QPushButton#view-button-modify:hover, QPushButton#createButton:hover, 
 QPushButton#deleteButton:hover, QPushButton#editButton:hover {
-	background-color: #06004C;
+	background-color: #1B0B3C;
 }
 
 QPushButton#newPartitionTableButton, QPushButton#newVolumeGroupButton, 
 QPushButton#resizeVolumeGroupButton, QPushButton#deactivateVolumeGroupButton, 
 QPushButton#removeVolumeGroupButton {
-	background-color: #9B99B7;
+	background-color: #978FA7;
     	font: 13px;
 	padding: 5px;
 }
@@ -349,13 +391,13 @@ QPushButton#newPartitionTableButton:pressed, QPushButton#newVolumeGroupButton:pr
 QPushButton#resizeVolumeGroupButton:pressed, QPushButton#deactivateVolumeGroupButton:pressed, 
 QPushButton#removeVolumeGroupButton:pressed, QPushButton#buttonRestore:pressed {
 	background-color: #7F3FBF;
-    	color: #CDCCDB;
+    	color: #C1BCCB;
 }
 
 QPushButton#newPartitionTableButton:hover, QPushButton#newVolumeGroupButton:hover, 
 QPushButton#resizeVolumeGroupButton:hover, QPushButton#deactivateVolumeGroupButton:hover, 
 QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
-	background-color: #06004C;
+	background-color: #1B0B3C;
 }
 
 #buttonRestore {
@@ -367,9 +409,9 @@ QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
 }
 
 #debugButton {
-	background-color: #06004C;
+	background-color: #1B0B3C;
 	font: bold 8px;
-	color: #CDCCDB;
+	color: #C1BCCB;
 	height: 32px;
     	padding: 0px;
 	border: none;
@@ -386,7 +428,7 @@ QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
 #aboutButton {
 	background-color: none;
 	font: 16px;
-	color: #06004C;
+	color: #1B0B3C;
     	border: none;
 }
 
@@ -401,7 +443,7 @@ QPushButton#removeVolumeGroupButton:hover, QPushButton#buttonRestore:hover {
 /* ########## RADIO BUTTON ########## */
 
 QRadioButton {
-	color: #06004C;
+	color: #1B0B3C;
 	padding-left: 3px;
 }
 
@@ -439,16 +481,67 @@ QItemSelectionModel::Select {
 /* ########## PROGRESS BAR ########## */
 
 QProgressBar {
-	background-color: #9B99B7;
+	background-color: #978FA7;
 	color: #FFFFFF;
-    	border: 2px solid #06004C;
+    	border: 2px solid #1B0B3C;
    	border-radius: 0px;
 	text-align: center;
 }
 
 QProgressBar::chunk {
-    	background-color: #06004C;
+    	background-color: #1B0B3C;
 }
+
+/* ########## SCROLL BAR ########## */
+
+QScrollBar:vertical {
+     border: 1px solid #6F6583;
+     background: #D3D1D9;
+     width: 20px;
+     margin: 24px 0 24px 0;
+}
+
+QScrollBar::handle:vertical {
+     background: #6F6583;
+     max-height: 25px;
+}
+
+QScrollBar::sub-line:vertical {
+     border: none;
+     background: none;
+     height: 20px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical {
+     border: none;
+     background: none;
+     height: 20px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:vertical {
+     border: none;
+     width: 12px;
+     height: 8px;
+     background: none;
+     image: url(/usr/share/calamares/branding/endeavouros/img/up-arrow.png);
+}
+
+QScrollBar::down-arrow:vertical {
+     border: none;
+     width: 12px;
+     height: 8px;
+     background: none;
+     image: url(/usr/share/calamares/branding/endeavouros/img/branch_open.png);
+}
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+}
+
 
 /* Partitioning module.
 
