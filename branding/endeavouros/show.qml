@@ -169,18 +169,6 @@ Presentation
             anchors.centerIn: parent
         }
     }
-    
-    Slide {
-
-        Image {
-            id: background_14
-            source: "14_endeavouros_slide.png"
-            width: 1002; height: 651
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
 
     // When this slideshow is loaded as a V1 slideshow, only
     // activatedInCalamares is set, which starts the timer (see above).
