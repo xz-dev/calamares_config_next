@@ -75,8 +75,8 @@ sidebar: widget
 strings:
     productName:         EndeavourOS
     shortProductName:    EndeavourOS
-    version:             2020.09.19
-    shortVersion:        2020.09.19
+    version:             2020.11.00
+    shortVersion:        2020.11.00
     versionedName:       EndeavourOS
     shortVersionedName:  EndeavourOS
     bootloaderEntryName: EndeavourOS
@@ -133,7 +133,7 @@ slideshowAPI: 2
 # branding component also ships a stylesheet.qss. Then they are
 # the corresponding CSS attributes of #sidebarApp.
 style:
-   sidebarBackground:    "#06004C"
-   sidebarText:          "#CDCCDB"
-   sidebarTextSelect:    "#06004C"
-   sidebarTextHighlight: "#CDCCDB"
+   sidebarBackground:    "#1B0B3C"
+   sidebarText:          "#C1BCCB"
+   sidebarTextSelect:    "#1B0B3C"
+   sidebarTextHighlight: "#C1BCCB"
