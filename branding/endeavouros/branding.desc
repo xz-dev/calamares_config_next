@@ -104,7 +104,7 @@ strings:
 images:
     productLogo:         "EndeavourOS-logo.png"
     productIcon:         "EndeavourOS-icon.png"
-    productWelcome:      "01_endeavouros_lang.png"
+    productWelcome:      "endeavouros_lang.png"
 
 # The slideshow is displayed during execution steps (e.g. when the
 # installer is actually writing to disk and doing other slow things).
