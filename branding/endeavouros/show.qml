@@ -48,23 +48,11 @@ Presentation
         }
     }
 
-
     Slide {
 
         Image {
             id: background_3
             source: "03_endeavouros_slide.png"
-            width: 1002; height: 651
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
-
-        Slide {
-
-        Image {
-            id: background_4
-            source: "04_endeavouros_slide.png"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
