@@ -102,8 +102,8 @@ strings:
 #
 # These filenames can also use substitutions from os-release (see above).
 images:
-    productLogo:         "EndeavourOS-logo.png"
-    productIcon:         "EndeavourOS-icon.png"
+    productLogo:         "endeavouros-logo.png"
+    productIcon:         "endeavouros-icon.png"
     productWelcome:      "01_endeavouros_lang.png"
 
 # The slideshow is displayed during execution steps (e.g. when the
