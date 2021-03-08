@@ -82,6 +82,17 @@ Presentation
         }
     }
     
+        Slide {
+
+        Image {
+            id: background_5
+            source: "05_slide.png"
+            width: 1002; height: 651
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+    }
+    
     // When this slideshow is loaded as a V1 slideshow, only
     // activatedInCalamares is set, which starts the timer (see above).
     //
