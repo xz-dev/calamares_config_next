@@ -41,7 +41,7 @@ Presentation
 
         Image {
             id: background_1
-            source: "01_slide.png"
+            source: "01_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
@@ -53,7 +53,7 @@ Presentation
 
         Image {
             id: background_2
-            source: "02_slide.png"
+            source: "02_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
@@ -64,7 +64,7 @@ Presentation
 
         Image {
             id: background_3
-            source: "03_slide.png"
+            source: "03_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
@@ -75,7 +75,7 @@ Presentation
 
         Image {
             id: background_4
-            source: "04_slide.png"
+            source: "04_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
@@ -86,7 +86,7 @@ Presentation
 
         Image {
             id: background_5
-            source: "05_slide.png"
+            source: "05_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
@@ -97,7 +97,7 @@ Presentation
 
         Image {
             id: background_6
-            source: "06_slide.png"
+            source: "06_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
@@ -109,7 +109,7 @@ Presentation
 
         Image {
             id: background_7
-            source: "07_slide.png"
+            source: "07_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
@@ -121,7 +121,7 @@ Presentation
 
         Image {
             id: background_8
-            source: "08_slide.png"
+            source: "08_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
@@ -133,7 +133,18 @@ Presentation
 
         Image {
             id: background_9
-            source: "09_slide.png"
+            source: "09_slide.jpg"
+            width: 1002; height: 651
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+    }
+
+        Slide {
+
+        Image {
+            id: background_10
+            source: "10_slide.jpg"
             width: 1002; height: 651
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
