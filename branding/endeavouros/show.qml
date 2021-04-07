@@ -48,7 +48,6 @@ Presentation
         }
     }
 
-
     Slide {
 
         Image {
@@ -59,6 +58,7 @@ Presentation
             anchors.centerIn: parent
         }
     }
+
 
         Slide {
 
