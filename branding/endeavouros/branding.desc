@@ -85,6 +85,12 @@ strings:
 #   knownIssuesUrl:      https://github.com/endeavouros-team/calamares-offlineinstaller/issues
 #   releaseNotesUrl:     https://endeavouros.com/?page_id=83
 
+# log feature
+
+uploadServer :
+    type :    "fiche"
+    url :     "http://termbin.com:9999"
+    
 # These images are loaded from the branding module directory.
 #
 # productIcon is used as the window icon, and will (usually) be used
