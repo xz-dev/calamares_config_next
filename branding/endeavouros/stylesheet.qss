@@ -241,7 +241,6 @@ QPushButton {
 QPushButton#newPartitionTableButton, QPushButton#newVolumeGroupButton, 
 QPushButton#resizeVolumeGroupButton, QPushButton#deactivateVolumeGroupButton, 
 QPushButton#removeVolumeGroupButton {
-	background-color: #978FA7;
     	font: 13px;
 	padding: 5px;
 }
