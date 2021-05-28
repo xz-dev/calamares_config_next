@@ -26,26 +26,7 @@ The examples are not exhaustive.
 
 /* 
 
-EndeavourOS Calamares Theme by FLVAL
-https://github.com/FLVAL/calamares_branding
-https://github.com/endeavouros-team/calamares_branding
-
-BLUE THEME OFFLINE
-color01: #1B0B3C	purple night
-color02: #383370	     |
-color03: #6F6583	     |
-color04: #978FA7	     |
-color05: #C1BCCB	     |
-color06: #D3D1D9	clearest
-color07: #52134C	tooltip purple
-color08: #DCD0DB	tooltip text
-color09: #000000	black error
-color10: #3F5924	valid green
-
-ENDEAVOUROS LOGO
-color11: #7F3FBF     	purple
-color12: #7F7FFF     	blue
-color13: #FF7F7F     	orange
+EndeavourOS Calamares Theme
 
 */
 
@@ -67,182 +48,44 @@ QWidget {
 }
 
 QListWidget::item:alternate {
-	color: #1B0B3C;
-}
-
-
-QDialogButtonBox { 
-	dialogbuttonbox-buttons-have-icons: 0;
-
+	color: #353945;
 }
 
 
 
-/* ########## LINE EDIT ########## */
-
-QLineEdit#LE_TestKeyboard {
-	height: 25px;
-	border-radius: 5px;	
-}
-
-QLineEdit#m_passphraseLineEdit, QLineEdit#vgName,
-QLineEdit#m_confirmLineEdit { 
-	border-radius: 5px;
-}
-
-QLineEdit#textBoxUserVerifiedPassword, QLineEdit#textBoxVerifiedRootPassword { 
-	width: 220px;
-	height: 25px;
-	border-radius: 5px;
-}
-
-QLineEdit#textBoxFullName, QLineEdit#textBoxLoginName, QLineEdit#textBoxHostName,
-QLineEdit#textBoxUserPassword, QLineEdit#textBoxRootPassword { 
-	width: 220px;
-	height: 25px;
-	border-radius: 5px;
-	margin-left: 120px;
-}
-
-#textBoxFullName, #textBoxLoginName, #textBoxHostName, #textBoxUserPassword,
-#textBoxRootPassword, #textBoxAutoLogin, #vgName {
-	font: 16px;
-	border: 1px solid #2F343F;
-	margin-left: 120px;
-}
-
-#textBoxUserVerifiedPassword, #textBoxVerifiedRootPassword, 
-#LE_TestKeyboard, #m_confirmLineEdit, #m_passphraseLineEdit {
-	font: 16px;
-	border: 1px solid #2F343F;
-}
-
-/* ########## LABEL ########## */
-
-#partResizerWidget {
-	border: 1px solid #ffffff;
-}
-
-#m_previewBeforeFrame, #m_previewAfterFrame {
-}
-
-#labelWhatIsYourName {
-	margin-top: 90px;
-	margin-left: 120px;
-}
-
-#username_label_2, #hostname_label_2, #password_label_2,
-#checkBoxValidatePassword, #checkBoxAutoLogin, #labelChooseRootPassword {
-	margin-top: 10px;
-	margin-left: 120px;
-}
-
-#checkBoxReusePassword, #checkBoxDoAutoLogin {
-	margin-left: 120px;
-}
-
-#labelFullNameError, #labelUsernameError,
-#labelHostnameError, #labelUserPasswordError,
-#labelRootPasswordError {
-}
-
-/* ########## COMBO BOX ########## */
-
-QComboBox {
-	font: 16px;
-	min-width: 300px;
-}
-
-QComboBox::down-arrow {
-	image: url(/etc/calamares/branding/endeavouros/img/launchpad_16x16.png);
-	width: 14px;
-	height: 14px;
-}
-
-QComboBox::item:selected {
-	padding: 5px;
-}
-
-
-/* ########## SPIN BOX ########## */
-
-QSpinBox {
-	border-width: 1px;
-	border-style: solid;
-	height: 24px;
-}
-
-QSpinBox::up-button {
-	width: 18px;
-}
-
-QSpinBox::down-button {
-	width: 18px;
-}
-
-/* ########## TREE VIEW ########## */
-
-QTreeView {
-	font: 14px;
-	show-decoration-selected: 0;
-}
-
-QTreeView::branch:has-siblings:!adjoins-item {
-	border-image: url(/etc/calamares/branding/endeavouros/img/branch_vline.png) 0;
-}
-
-QTreeView::branch:has-siblings:adjoins-item {
-	border-image: url(/etc/calamares/branding/endeavouros/img/branch_more.png) 0;
-}
-
-QTreeView::branch:!has-children:!has-siblings:adjoins-item {
-	border-image: url(/etc/calamares/branding/endeavouros/img/branch_end.png) 0;
-}
-
-QTreeView::branch:has-children:!has-siblings:closed,
-QTreeView::branch:closed:has-children:has-siblings {
-        border-image: none;
-        image: url(/etc/calamares/branding/endeavouros/img/branch_closed.png);
-}
-
-QTreeView::branch:open:has-children:!has-siblings,
-QTreeView::branch:open:has-children:has-siblings  {
-        border-image: none;
-        image: url(/etc/calamares/branding/endeavouros/img/branch_open.png);
-}
-
-/* ########## HEADER VIEW ########## */
-
-QHeaderView::section {
-	border: 1px dotted white;
-	padding-left: 4px;
-}
-
-/* ########## TOOLTIP ########## */
-
-QToolTip {
-        font : 16px;
+#debugButton {
+	background-color: none;
+	font: bold 8px;
+	color: #ffffff;
+	height: 32px;
+    	padding: 0px;
 	border: none;
-	padding: 3px;
 }
 
-/* ########## CHECK BOX ########## */
-
-QCheckBox {
-	spacing: 5px;
+#debugButton:pressed {
+	color: #7F3FBF;
 }
 
-QCheckBox::indicator:unchecked {
-	image: url(/etc/calamares/branding/endeavouros/img/checkbox_unchecked.png);
+#debugButton:hover {
+	color: #7F3FBF;
 }
 
-QCheckBox::indicator:checked {
-	image: url(/etc/calamares/branding/endeavouros/img/checkbox_checked.png);
+#aboutButton {
+	background-color: none;
+	font: 16px;
+	color: #ffffff;
+    	border: none;
 }
 
-QItemSelectionModel::Select {
-	image: url(/etc/calamares/branding/endeavouros/img/checkbox_checked.png);
+#aboutButton:pressed {
+	color: #7F3FBF;
 }
+
+#aboutButton:hover {
+	color: #7F3FBF;
+}
+
+
 
 
 
