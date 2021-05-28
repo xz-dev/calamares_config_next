@@ -44,7 +44,7 @@ EndeavourOS Calamares Theme
 
 QWidget {
 	font: 16px;
-	color: #ffffff;
+	color: #000000;
 }
 
 QListWidget::item:alternate {
@@ -73,7 +73,7 @@ QListWidget::item:alternate {
 #aboutButton {
 	background-color: none;
 	font: 16px;
-	color: #ffffff;
+	color: #000000;
     	border: none;
 }
 
