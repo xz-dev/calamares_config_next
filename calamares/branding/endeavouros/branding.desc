@@ -139,7 +139,7 @@ slideshowAPI: 2
 # branding component also ships a stylesheet.qss. Then they are
 # the corresponding CSS attributes of #sidebarApp.
 style:
-   sidebarBackground:    "#353945"
+   sidebarBackground:    "#2f343f"
    sidebarText:          "#ffffff"
-   sidebarTextSelect:    "#1B0B3C"
-   sidebarTextHighlight: "#5294e2"
+   sidebarTextSelect:    "#2f343f"
+   sidebarTextHighlight: "#f5f6f7"
