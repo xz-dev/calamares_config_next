@@ -56,14 +56,14 @@ color13: #FF7F7F     	orange
 
 
 #sidebarMenuApp {
-	background-image: url(/usr/share/calamares/branding/endeavouros/img/bg_sidebar_left.png);
+	background-image: url(/etc/calamares/branding/endeavouros/img/bg_sidebar_left.png);
 	font: 20px;
 	padding-top: 30px;
 }
 
 QWidget {
 	font: 16px;
-	color: #1B0B3C;
+	color: #ffffff;
 }
 
 QListWidget::item:alternate {
@@ -120,7 +120,7 @@ QLineEdit#textBoxUserPassword, QLineEdit#textBoxRootPassword {
 /* ########## LABEL ########## */
 
 #partResizerWidget {
-	border: 1px solid #1B0B3C;
+	border: 1px solid #ffffff;
 }
 
 #m_previewBeforeFrame, #m_previewAfterFrame {
@@ -154,7 +154,7 @@ QComboBox {
 }
 
 QComboBox::down-arrow {
-	image: url(/usr/share/calamares/branding/endeavouros/img/launchpad_16x16.png);
+	image: url(/etc/calamares/branding/endeavouros/img/launchpad_16x16.png);
 	width: 14px;
 	height: 14px;
 }
@@ -188,27 +188,27 @@ QTreeView {
 }
 
 QTreeView::branch:has-siblings:!adjoins-item {
-	border-image: url(/usr/share/calamares/branding/endeavouros/img/branch_vline.png) 0;
+	border-image: url(/etc/calamares/branding/endeavouros/img/branch_vline.png) 0;
 }
 
 QTreeView::branch:has-siblings:adjoins-item {
-	border-image: url(/usr/share/calamares/branding/endeavouros/img/branch_more.png) 0;
+	border-image: url(/etc/calamares/branding/endeavouros/img/branch_more.png) 0;
 }
 
 QTreeView::branch:!has-children:!has-siblings:adjoins-item {
-	border-image: url(/usr/share/calamares/branding/endeavouros/img/branch_end.png) 0;
+	border-image: url(/etc/calamares/branding/endeavouros/img/branch_end.png) 0;
 }
 
 QTreeView::branch:has-children:!has-siblings:closed,
 QTreeView::branch:closed:has-children:has-siblings {
         border-image: none;
-        image: url(/usr/share/calamares/branding/endeavouros/img/branch_closed.png);
+        image: url(/etc/calamares/branding/endeavouros/img/branch_closed.png);
 }
 
 QTreeView::branch:open:has-children:!has-siblings,
 QTreeView::branch:open:has-children:has-siblings  {
         border-image: none;
-        image: url(/usr/share/calamares/branding/endeavouros/img/branch_open.png);
+        image: url(/etc/calamares/branding/endeavouros/img/branch_open.png);
 }
 
 /* ########## HEADER VIEW ########## */
@@ -226,65 +226,6 @@ QToolTip {
 	padding: 3px;
 }
 
-/* ########## BUTTONS GENERAL A/GENERAL B/SUBCATEGORY ########## */
-
-QPushButton {
-    	border: 1px solid #1B0B3C;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-    	min-width: 4em;
-    	padding: 6px;
-}
-
-
-
-QPushButton#newPartitionTableButton, QPushButton#newVolumeGroupButton, 
-QPushButton#resizeVolumeGroupButton, QPushButton#deactivateVolumeGroupButton, 
-QPushButton#removeVolumeGroupButton {
-    	font: 13px;
-	padding: 5px;
-}
-
-#buttonRestore {
-	image: url(/usr/share/calamares/branding/endeavouros/img/restore_.png);
-}
-
-#buttonRestore:hover {
-	image: url(/usr/share/calamares/branding/endeavouros/img/restore_hov.png);
-}
-
-#debugButton {
-	font: bold 8px;
-	height: 32px;
-    	padding: 0px;
-	border: none;
-}
-
-
-#aboutButton {
-	font: 16px;
-    	border: none;
-}
-
-/* ########## RADIO BUTTON ########## */
-
-QRadioButton {
-	padding-left: 3px;
-}
-
-QRadioButton::indicator {    	
-	width: 16px;
-	height: 16px;
-}
-
-QRadioButton::indicator::unchecked {
-    image: url(/usr/share/calamares/branding/endeavouros/img/radiobutton_unchecked.png);
-}
-
-QRadioButton::indicator::checked {
-    image: url(/usr/share/calamares/branding/endeavouros/img/radiobutton_checked.png);
-}
-
 /* ########## CHECK BOX ########## */
 
 QCheckBox {
@@ -292,73 +233,18 @@ QCheckBox {
 }
 
 QCheckBox::indicator:unchecked {
-	image: url(/usr/share/calamares/branding/endeavouros/img/checkbox_unchecked.png);
+	image: url(/etc/calamares/branding/endeavouros/img/checkbox_unchecked.png);
 }
 
 QCheckBox::indicator:checked {
-	image: url(/usr/share/calamares/branding/endeavouros/img/checkbox_checked.png);
+	image: url(/etc/calamares/branding/endeavouros/img/checkbox_checked.png);
 }
 
 QItemSelectionModel::Select {
-	image: url(/usr/share/calamares/branding/endeavouros/img/checkbox_checked.png);
-}
-
-/* ########## PROGRESS BAR ########## */
-
-QProgressBar {
-    	border: 2px solid #1B0B3C;
-   	border-radius: 0px;
-	text-align: center;
+	image: url(/etc/calamares/branding/endeavouros/img/checkbox_checked.png);
 }
 
 
-/* ########## SCROLL BAR ########## */
-
-QScrollBar:vertical {
-     border: 1px solid #6F6583;
-     width: 20px;
-     margin: 24px 0 24px 0;
-}
-
-QScrollBar::handle:vertical {
-     max-height: 25px;
-}
-
-QScrollBar::sub-line:vertical {
-     border: none;
-     background: none;
-     height: 20px;
-     subcontrol-position: top;
-     subcontrol-origin: margin;
-}
-
-QScrollBar::add-line:vertical {
-     border: none;
-     background: none;
-     height: 20px;
-     subcontrol-position: bottom;
-     subcontrol-origin: margin;
-}
-
-QScrollBar::up-arrow:vertical {
-     border: none;
-     width: 12px;
-     height: 8px;
-     background: none;
-     image: url(/usr/share/calamares/branding/endeavouros/img/up-arrow.png);
-}
-
-QScrollBar::down-arrow:vertical {
-     border: none;
-     width: 12px;
-     height: 8px;
-     background: none;
-     image: url(/usr/share/calamares/branding/endeavouros/img/branch_open.png);
-}
-
- QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-     background: none;
-}
 
 
 /* Partitioning module.
