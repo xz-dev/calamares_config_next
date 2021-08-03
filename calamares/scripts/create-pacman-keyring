@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 haveged -w 1024
 pacman-key --init
 pkill haveged
