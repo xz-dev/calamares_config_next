@@ -41,3 +41,5 @@ style:
    sidebarText:          "#ffffff"
    sidebarTextSelect:    "#000000"
    sidebarTextHighlight: "#f5f6f7"
+
+slideshow:               "show.qml"
