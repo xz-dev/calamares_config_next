@@ -12,7 +12,7 @@ Presentation
 
     Timer {
         id: advanceTimer
-        interval: 10000
+        interval: 30000
         running: true
         repeat: true
         onTriggered: nextSlide()
