@@ -1,10 +1,10 @@
-componentName:  endeavouros
+componentName: endeavouros
 
-welcomeStyleCalamares:   false
+welcomeStyleCalamares: false
 
-welcomeExpandingLogo:   true
+welcomeExpandingLogo: true
 
-windowExpanding:    normal
+windowExpanding: normal
 
 windowSize: 1200px,700px
 
