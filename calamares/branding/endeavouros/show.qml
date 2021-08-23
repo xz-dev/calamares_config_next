@@ -84,6 +84,17 @@ Presentation
             anchors.centerIn: parent
         }
     }
+            
+        Slide {
+
+        Image {
+            id: background_7
+            source: "07_slide.jpg"
+            width: 1002; height: 651
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+    }
     
     function onActivate() {
         console.log("QML Component (default slideshow) activated");
